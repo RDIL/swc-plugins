@@ -1,0 +1,20 @@
+{
+  "name": "@rdil/swc-plugin-react-utils",
+  "description": "@modern-js/swc-plugins' react_utils plugin as a standalone package.",
+  "version": "0.1.0",
+  "main": "swc_plugin_react_utils.wasm",
+  "repository": "RDIL/swc-plugins",
+  "scripts": {
+    "prepack": "cargo build --release -p swc_plugin_react_utils --target wasm32-wasi && cp ../../target/wasm32-wasi/release/swc_plugin_react_utils.wasm ."
+  },
+  "license": "MIT",
+  "preferUnplugged": true,
+  "files": [
+    "README.md",
+    "LICENSE",
+    "swc_plugin_react_utils.wasm"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

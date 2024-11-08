@@ -46,6 +46,8 @@ importers:
         specifier: ^0.24.4
         version: 0.24.4
 
+  crates/plugin_react_utils: {}
+
   packages/plugin-import: {}
 
   packages/react-const-elements: {}

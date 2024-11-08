@@ -46,6 +46,7 @@
     "changeset": "changeset",
     "build:wasm:import": "cd packages/plugin-import && npm run wasm",
     "build:wasm:react-const-elements": "cd packages/react-const-elements && npm run wasm",
+    "build:wasm:react-utils": "cd crates/plugin_react_utils && npm run prepack",
     "build:wasm": "rustup target add wasm32-wasi && npm run build:wasm:import && npm run build:wasm:react-const-elements"
   },
   "napi": {
